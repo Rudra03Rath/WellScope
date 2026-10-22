@@ -209,15 +209,3 @@ WellScope accepts standard LAS 2.0 files from public field datasets such as the 
 3. In WellScope, navigate to **Import & Curve Mapping**, upload the file, confirm the mnemonic mappings, and proceed with evaluation.
 
 ---
-
-## Short Demonstration Workflow (Placement Interview Script)
-
-When demonstrating WellScope to a petroleum engineering recruiter or technical reviewer:
-
-1. **Launch & Landing:** Open the app and highlight the petroleum engineering focus—transparent calculations rather than opaque black-box AI.
-2. **Ingestion & Curve Mapping:** Click **Load Bundled Synthetic Well** (or upload a LAS file). Show the curve inventory and explain that mnemonic mapping is confirmed explicitly, ensuring no unverified resistivity log is mistakenly treated as true formation resistivity ($R_t$).
-3. **Data Quality Control (QC):** Switch to **QC & Preprocessing**. Point out the depth integrity verification (monotonicity, zero duplicates). Highlight the **Borehole Environment QC** section, which flags caliper washouts and high $\Delta\rho$ corrections where density pad contact was lost.
-4. **Log Visualization:** Open **Log Viewer**. Point out the 7 synchronized tracks with depth increasing downward. Highlight the **Track 3 neutron-density gas crossover** (shaded in gold), the logarithmic resistivity track, and the clean null gap handling where curves break rather than interpolate.
-5. **Petrophysical Tuning:** Navigate to **Petrophysics**. Explain the choice of $V_{sh}$ models (e.g. Larionov for Mesozoic consolidated sands), select matrix lithology (Sandstone $\rho_{ma}=2.65\text{ g/cm}^3$), demonstrate the Arp's temperature conversion tool for $R_w$, and click **Calculate Petrophysics**. Show how calculation caveats and out-of-range diagnostics appear transparently.
-6. **Pay Evaluation & Sensitivity:** Go to **Pay Evaluation**. Point out the rule-based cutoff classification ($V_{sh} \le 0.35, \phi_e \ge 0.10, S_w \le 0.50$, excluding bad-hole intervals). Review the resulting Net Pay thickness and Net-to-Gross ($NTG$). Explain the **Cutoff Sensitivity Analysis curves**, demonstrating how the asset's qualifying net pay responds to petrophysical cutoff uncertainty.
-7. **Reporting & Deliverables:** Navigate to **Report & Export**. Download the audit-ready **HTML report** and **PDF report**, demonstrating that all equations, parameters, cutoffs, QC exclusions, and interval tables are recorded with full reproducibility.
