@@ -1,0 +1,160 @@
+{
+  "software": "WellScope",
+  "version": "1.0.0",
+  "well_header": {
+    "well_name": "WELLSCOPE-SYNTH-01",
+    "field": "NORTH SEA SYNTHETIC",
+    "location": "BLOCK 16/1",
+    "service_company": "WELLSCOPE PETROPHYSICS",
+    "date": "2026-10-21",
+    "null_value": -999.25,
+    "start_depth": 2000.0,
+    "stop_depth": 2150.0,
+    "step": 0.1,
+    "depth_unit": "M"
+  },
+  "parameters": {
+    "gr_clean": 25.0,
+    "gr_shale": 115.0,
+    "vsh_model_name": "Larionov (Older / Mesozoic)",
+    "vsh_equation": "Vsh = 0.33 * (2^(2.0 * IGR) - 1)",
+    "rhoma": 2.65,
+    "rhof": 1.0,
+    "phie_model_name": "Proportional (PHIE = PHID * (1 - Vsh))",
+    "rw": 0.05,
+    "a": 1.0,
+    "m": 2.0,
+    "n": 2.0,
+    "vsh_cutoff": 0.35,
+    "phie_cutoff": 0.1,
+    "sw_cutoff": 0.5
+  },
+  "qc_summary": {
+    "bit_size_in": 8.5,
+    "washout_threshold_in": 10.0,
+    "drho_threshold": 0.05,
+    "washout_sample_count": 200,
+    "bad_hole_sample_count": 200,
+    "washout_intervals": [
+      {
+        "flag": "Caliper Washout",
+        "top_depth": 2110.0,
+        "base_depth": 2129.9,
+        "thickness": 19.90000000000009,
+        "sample_count": 200
+      }
+    ],
+    "bad_hole_intervals": [
+      {
+        "flag": "Bad Borehole / DRHO Warning",
+        "top_depth": 2110.0,
+        "base_depth": 2129.9,
+        "thickness": 19.90000000000009,
+        "sample_count": 200
+      }
+    ],
+    "total_depth_samples": 1501
+  },
+  "pay_summary": {
+    "gross_thickness": 150.0999999999999,
+    "reservoir_thickness": 69.09999999999968,
+    "net_pay_thickness": 34.40000000000009,
+    "net_to_gross": 0.22918054630246576,
+    "vsh_cutoff": 0.35,
+    "phie_cutoff": 0.1,
+    "sw_cutoff": 0.5,
+    "top_depth": 2000.0,
+    "base_depth": 2150.0,
+    "avg_vsh": 0.018181965047436095,
+    "avg_phie": 0.25039382185224074,
+    "avg_sw": 0.11188442330669049,
+    "avg_gr": 27.903866279069984,
+    "avg_rt": 64.75968023255867,
+    "intervals": [
+      {
+        "status": "QUALIFIED_PAY",
+        "top_depth": 2025.0,
+        "base_depth": 2040.4,
+        "net_pay_thickness": 15.5,
+        "avg_vsh": 0.019064417641884737,
+        "avg_phie": 0.24932670858800687,
+        "avg_sw": 0.11170013421854137,
+        "rejection_reason": "N/A - Qualified Candidate Pay"
+      },
+      {
+        "status": "QUALIFIED_PAY",
+        "top_depth": 2041.1,
+        "base_depth": 2059.9,
+        "net_pay_thickness": 18.90000000000009,
+        "avg_vsh": 0.017458260538761275,
+        "avg_phie": 0.25126896765095114,
+        "avg_sw": 0.11203555986046358,
+        "rejection_reason": "N/A - Qualified Candidate Pay"
+      }
+    ],
+    "rejected_intervals": [
+      {
+        "status": "REJECTED_WATER_BEARING",
+        "top_depth": 2074.9,
+        "base_depth": 2075.2,
+        "net_pay_thickness": 0.3999999999998636,
+        "avg_vsh": 0.24478882167940594,
+        "avg_phie": 0.10760571501046433,
+        "avg_sw": 0.7311553762070034,
+        "rejection_reason": "Water-bearing reservoir sand: Sw avg (0.73) > cutoff (0.50)"
+      },
+      {
+        "status": "REJECTED_WATER_BEARING",
+        "top_depth": 2080.0,
+        "base_depth": 2109.9,
+        "net_pay_thickness": 30.0,
+        "avg_vsh": 0.00833470004662037,
+        "avg_phie": 0.19675997129181239,
+        "avg_sw": 0.8959927161897094,
+        "rejection_reason": "Water-bearing reservoir sand: Sw avg (0.90) > cutoff (0.50)"
+      }
+    ],
+    "all_intervals": [
+      {
+        "status": "QUALIFIED_PAY",
+        "top_depth": 2025.0,
+        "base_depth": 2040.4,
+        "net_pay_thickness": 15.5,
+        "avg_vsh": 0.019064417641884737,
+        "avg_phie": 0.24932670858800687,
+        "avg_sw": 0.11170013421854137,
+        "rejection_reason": "N/A - Qualified Candidate Pay"
+      },
+      {
+        "status": "QUALIFIED_PAY",
+        "top_depth": 2041.1,
+        "base_depth": 2059.9,
+        "net_pay_thickness": 18.90000000000009,
+        "avg_vsh": 0.017458260538761275,
+        "avg_phie": 0.25126896765095114,
+        "avg_sw": 0.11203555986046358,
+        "rejection_reason": "N/A - Qualified Candidate Pay"
+      },
+      {
+        "status": "REJECTED_WATER_BEARING",
+        "top_depth": 2074.9,
+        "base_depth": 2075.2,
+        "net_pay_thickness": 0.3999999999998636,
+        "avg_vsh": 0.24478882167940594,
+        "avg_phie": 0.10760571501046433,
+        "avg_sw": 0.7311553762070034,
+        "rejection_reason": "Water-bearing reservoir sand: Sw avg (0.73) > cutoff (0.50)"
+      },
+      {
+        "status": "REJECTED_WATER_BEARING",
+        "top_depth": 2080.0,
+        "base_depth": 2109.9,
+        "net_pay_thickness": 30.0,
+        "avg_vsh": 0.00833470004662037,
+        "avg_phie": 0.19675997129181239,
+        "avg_sw": 0.8959927161897094,
+        "rejection_reason": "Water-bearing reservoir sand: Sw avg (0.90) > cutoff (0.50)"
+      }
+    ]
+  }
+}
